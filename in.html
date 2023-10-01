@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Animation Example</title>
+    <style>
+        /* Define the animation keyframes */
+        @keyframes neon {
+            0% {
+                text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
+            }
+            50% {
+                text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 60px rgba(255, 255, 255, 0.8);
+            }
+            100% {
+                text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
+            }
+        }
+
+        /* Apply the animation to the text */
+        .animated-text {
+            font-size: 2em;
+            font-weight: bold;
+            color: #333;
+            animation: neon 1.5s infinite;
+            transition: animation-play-state 0.3s ease; /* Add transition effect for animation pause/play */
+        }
+
+        /* Pause animation on hover */
+        .animated-text:hover {
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="animated-text">Text Animation Example</h1>
+</body>
+</html>

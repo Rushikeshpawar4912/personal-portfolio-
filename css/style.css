@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:black;
+}
+/* navbar */
+.nav{
+    background-color:black;
+
+   display: flex;
+  position: sticky;
+  box-shadow: 5px 5px 10px whitea(0, 0, 0, 0.5); /* Dark shadow effect */
+  transition: box-shadow 0.3s ease;
+}
+.nav ul li:hover{
+    color: black;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 20px;
+
+}
+.nav ul{
+    display: flex;
+    padding: 20px;
+    padding-top: 5px;
+    padding-left: 50px;
+    color:white;
+}
+.nav ul li{
+  padding: 30px;
+  list-style: none;
+  font-size: 180%;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+/* .middle */
+.middle img{
+    width: 25%;
+    position: absolute;
+  top: 0; /* Position at the top */
+  right: 0; /* Position at the right */
+  padding-top:120px;
+  padding-right: 300px;
+  max-width: 100%;
+  box-shadow: 5px;
+  border-radius: 25%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+    background-color: black
+}
+.middle h1{
+    padding-left: 200px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 80px;
+    color:black;
+    
+}
+.middle h2{
+    padding-left: 150px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+    color:black;
+
+}
+.middle h3{
+    padding-left: 50px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:black;
+
+   
+}
+.middle {
+    background-color: whitesmoke;
+    height: 50vh;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2), -3px -3px 6px rgba(255, 255, 255, 0.5);
+    transition: box-shadow 0.3s ease;
+
+}
+.middle1{
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 360px;
+    margin: 20px;
+    display:inline-block;
+    
+}
+.middle1 span{
+    margin-top: 50px;
+    color: white;
+    font-size: 250%;
+}
+.middle1 h3{
+   font-size: 25px;
+   font-weight: bold;
+   border: 5px solid whitesmoke;
+   color: black;
+   background-color: whitesmoke;
+   border-radius: 30%;
+
+}
+.middle3{
+    display: flex;
+    padding: 50px;
+    width: 80%;
+    box-shadow: 5px 5px 10px whitea(0, 0, 0, 0.5); /* Dark shadow effect */
+    transition: box-shadow 0.3s ease;
+}
+.middle3 img{
+   width: 30%;
+   border-radius: 20%;
+}
+.middle3 div{
+   font-size:30px;
+   font-weight: bold;
+   text-align: center;
+   color: whitesmoke;
+   
+}
+.middle3 h4{
+    font-size:20px;
+    text-align: center;
+    color: white;
+    padding: 20px;
+
+    
+ }
+ .middle3 span{
+    font-size:50px;
+ }
+
+
+ .footer {
+    background-color:whitesmoke;
+    color:black;
+   text-align: center;
+   height: 15vh;
+   font-weight: bold;
+   font-size: 20px;
+   box-shadow: 5px 5px 10px whitea(0, 0, 0, 0.5); /* Dark shadow effect */
+   transition: box-shadow 0.3s ease;
+   margin-bottom: 20px;
+   bottom: 0;
+   border-radius: 30%;
+}
+
+.footer img{
+    width: 45px;
+}
+
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Apply the animation to the text */
+.animated-text {
+    animation: slideIn 5s ease-in-out forwards;
+}
+
+@keyframes slideIn1{
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Apply the animation to the text */
+.animated-text1 {
+    animation: slideIn1 5s ease-in-out forwards;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }   
+}
+
+/* Apply the animation to the text */
+.blinking-text {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+    animation: blink 10s infinite;
+}

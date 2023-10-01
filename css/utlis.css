@@ -1,0 +1,14 @@
+.max-width-1 {
+    max-width: 95vw;
+  }
+  
+  .max-width-2 {
+    max-width: 60vw;
+  }
+  
+  .m-auto {
+    margin: auto;
+  }
+  html{
+    scroll-behavior: smooth;
+}
